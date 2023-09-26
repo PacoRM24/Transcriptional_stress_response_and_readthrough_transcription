@@ -1,9 +1,11 @@
 # This code will check if there are peaks of RNAPII in the promoters of each DoG-producing gene
 
-dog_file = r"C:\Users\Paco\Desktop\MCF10A_DoGFinder_ensGene\DoGFinder_DoGs_TPL_after_f1.bed"
-chip_file = r"TSS_InPeaks_TT1peaks.bed"
-annotation_file = r"C:\Users\Paco\Desktop\MCF10A_DoGFinder_ensGene\loci_annotation_ensGene.bed"
-new_dog_file = "DoGFinder_DoGs_TPL_after_f2.bed"
+# Define the paths to the DoG file after filter 1, the same peaks file used in filter 1, the annotation file that could be found in the ARTDeco directory
+# in the preprocess_files
+dog_file = # path to DoG file
+chip_file = # path to peaks file
+annotation_file = # path to annotation file
+new_dog_file = # path and name for the output
 
 # Iterate through the RNAPII peaks to find which maps to a DoG-producing gene promoter
 with open(dog_file, "r") as dogs, open(chip_file, "r") as peaks, open(annotation_file, "r") as genome, open(new_dog_file, "w") as new_dogs:

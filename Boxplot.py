@@ -22,7 +22,7 @@ for i in dogs_length:
         c += 1
 print(c)
 
-# Imprimir los valores máximo, mínimo, mediana y el promedio
+# Calculate the maximum, minimum, median and mean values
 maximo = np.max(dogs_length)
 minimo = np.min(dogs_length)
 mediana = np.median(dogs_length)

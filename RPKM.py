@@ -1,11 +1,13 @@
+# This code will calculate the RPKM values for DoGs found by ARTDeco
+
 import re
 
 #The Paths to the bam_summary file and raw counts of DoGs are saved in variables
-bam_summary = r"C:\Users\Paco\Desktop\Pan_ARTDeco_ensGene\summary_files\bam_summary.txt"
-dogs_raw_counts = r"C:\Users\Paco\Desktop\Pan_ARTDeco_ensGene\dogs\all_dogs.raw.txt"
+bam_summary = r"C:\Users\Paco\Desktop\Pan_ARTDeco_ensGene\summary_files\bam_summary.txt" # Write the path to the bam_summary.txt file from ARTDeco directory
+dogs_raw_counts = r"C:\Users\Paco\Desktop\Pan_ARTDeco_ensGene\dogs\all_dogs.raw.txt" # Write the path to the all.dogs.raw.txt file from ARTDeco directory
 
 #A new file for the RPKM results is saved in a a variable
-RPKM_file = "RPKM_file2.txt"
+RPKM_file = "RPKM_file.txt"
 
 #First is the extraction of the mapped reads in each condition
 conditions_wreads = dict()

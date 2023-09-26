@@ -1,8 +1,9 @@
 #This code will check if RNAPII peaks match within any DoG in MCF10A-ER-Src cells in each condition and replicate
 
-dog_file = r"C:\Users\Paco\Desktop\MCF10A_DoGFinder_ensGene\common_dog_annotation_TPL.bed"
-chip_file = r"TSS_InPeaks_TT1peaks.bed"
-new_dog_file = "DoGFinder_DoGs_TPL_after_f1.bed"
+# Define the paths to the DoG file, the peaks files and the output
+dog_file = # Write the path to the DoGs file
+chip_file = # Write the path to the peaks file
+new_dog_file = # Write the path and name of the output
 
 #Iterate through the RNAPII peaks to find which maps to a DoG
 with open(dog_file, "r") as dogs, open(chip_file, "r") as peaks, open(new_dog_file, "w") as new_dogs:

@@ -1,0 +1,7 @@
+4 Experiments
+Files are Single-End, Unstranded
+       Experiment  Total Reads  Mapped Reads
+ ./SRX6637060.bam     22843799      21315940
+ ./SRX6637057.bam     22893450      21385181
+ ./SRX6637058.bam     22892091      21627897
+ ./SRX6637059.bam     22863806      21620763

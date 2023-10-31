@@ -4,10 +4,13 @@ import seaborn as sns
 import pandas as pd
 import matplotlib.pyplot as plt
 
-data = pd.read_csv(path, sep="\t") #change 'path' for the actual path were the file with the log2FC is storage
+data = pd.read_csv(dog_file, sep="\t") #change 'dog_file' for the actual path were the file with the log2FC is storage
+
+# Filter the data by p-value <= 0.05
+filtered_data = data[data['padj'] <= 0.05]
 
 # Create a Dataframe with the values for log2 fold change
-data_fold_change = data['log2FoldChange']
+data_fold_change = filtered_data['log2FoldChange']
 
 # Extract the max and min values of log2fc
 val_max = data_fold_change.max()

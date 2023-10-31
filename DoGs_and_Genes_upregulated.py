@@ -1,12 +1,12 @@
 # This code will extract Gene Symbols from the DAVID gene ID conversion tool
-# and compare them with the upregulated genes.
+# and compare them with the DoG-producing genes from osmotic stress
 
 # Define the paths to the conversion table and the file containing upregulated genes.
 conversion_table = # Write the path to the conversion table given by DAVIDs conversion tool
-genes_up_file = # Write the path to the list of genes upregulated
+osmotic_file = # Write the path to the list of DoG-producing genes from osmotic stress
 
 # Open the conversion table and upregulated genes file for reading.
-with open(conversion_table, "r") as dogs, open(genes_up_file, "r") as genes_up:
+with open(conversion_table, "r") as dogs, open(osmotic_file, "r") as osmotic:
 
     # Initialize an empty list to store Gene Symbols from the conversion table.
     dogs_names = []
@@ -23,7 +23,7 @@ with open(conversion_table, "r") as dogs, open(genes_up_file, "r") as genes_up:
     c = 0
 
     # Compare genes from the upregulated genes file with those in dogs_names.
-    for gene in genes_up:
+    for gene in osmotic:
         gene = gene.strip()
         if gene in dogs_names:
             c += 1
